@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.container {
+  display: grid;
+  grid-template-areas: ". d1 d2 d3 ."
+                       ". d4 d5 d6 .";
+                       
+  grid-template-columns: 1fr 0.5fr 1.7fr 0.8fr 1fr; 
+  grid-template-rows: 50px 50px;
+  column-gap: 10px;
+  background-color: rgb(255, 230, 0);
+}
+
+.item1 { grid-area: d1;  background: transparent; padding: 10px 10px; }
+.item2 { grid-area: d2;  background: transparent; padding: 10px 10px; }
+.item3 { grid-area: d3; background: transparent; padding: 10px 10px; }
+.item4 { grid-area: d4; background: transparent; padding: 10px 10px; }
+.item5 { grid-area: d5; background: transparent;  }
+.item6 { grid-area: d6; background: transparent; display: flex; justify-items: end; align-items: end; }
+

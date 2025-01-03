@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+ 
+    font-family: Inter,Roboto, sans-serif;
+    list-style-type: none;
+
+}
+.container li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container li span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  
+  align-items: end;
+  font-family: Inter,Roboto, sans-serif;
+  background-color: transparent;
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  border: none;
+}

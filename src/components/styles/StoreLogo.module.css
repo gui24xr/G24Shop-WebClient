@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+.container{
+    display: inline-flex;
+    background-color: transparent;
+    padding: 10px 20px;
+ 
+    
+    font-family: Frijole;
+    text-decoration:underline;
+    font-size: 0.8em;
+  
+}

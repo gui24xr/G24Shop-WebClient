@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.container{
+  display: flex;
+  width: 100%;
+  row-gap: 50px;
+    background-color: #333;
+    padding: 10px 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 20px;
+ 
+  }
+  
+  .itemsList {
+
+    background-color: transparent;
+    font-family: Inter,Roboto, sans-serif;
+    font-size: 1em;
+  }
+  
+  .itemsList button{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bolder;
+  }
+  
+  
+  
