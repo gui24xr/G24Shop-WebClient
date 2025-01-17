@@ -45,6 +45,7 @@ const useCartsStore = create ((set,get)=>({
         try{
             const result = await apiClient.get('/carts',{params:{cartId:get().currentCart}})
             const searchedCart = result.data
+            console.log('Cart: ',searchedCart)
             return set({cartData:{
                 cartId: searchedCart.id,
                 products: searchedCart.products,

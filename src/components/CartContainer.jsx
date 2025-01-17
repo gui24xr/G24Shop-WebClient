@@ -49,17 +49,15 @@ const CartContainer = () => {
                             <td>{product.id}</td>
                             <td>{product.title}</td>
                             <td>{product.brand}</td>
-                            <td>${product.price}</td>
+                            <td>${product.currentPrice}</td>
                             <td>
                                 <form onSubmit={onHandleChangeQuantitySubmit}>
-                                <input name='quantity' placeholder={product.quantity} required/>
-                                <input name='productId' value={product.id} type="hidden"/>
-                                <button type="submit">Modificar</button>
-
+                                    <input name='quantity' placeholder={product.quantity} required/>
+                                    <input name='productId' value={product.id} type="hidden"/>
+                                    <button type="submit">Modificar</button>
                                 </form>
-                              
-                                </td>
-                            <td></td>
+                            </td>
+                            <td>{product.stock.quantity}</td>
                             <td>{product.subTotalAmount}</td>
                             <td><button type="button" onClick={()=>onHandleDeleteButton(product.id)}>Eliminar</button></td>
                         </tr>
@@ -70,6 +68,7 @@ const CartContainer = () => {
             <div className='.cartcontainer-buttonswrapper'>
                     <ClearCartButton/>
                     <CreateOrderButton/>
+                 
             </div>
         </div>
     );

@@ -6,12 +6,25 @@ import { apiClient } from "../config/apiclient";
 export const useOrdersStore = create ((set,get)=>({
     currentOrder:null,
     paymentsMethodsList:null,
+    shippingMethodsList:null,
     paymentMethod:null,
     shippingPointsList: null,
     loading: true,
     error: null,
 
-
+    fetchOrdersOptions: async () =>{
+        try{
+            const result = await apiClient.get('/orders/options')
+            console.log('options: ',result.data)
+            return set({
+                paymentsMethodsList: result.data.paymentMethods,
+                shippingMethodsList: result.data.shippingMethods
+            })
+        }catch(error){
+            return set({error:error})
+        }
+    },
+    
     setCurrentOrder: async(orderId) => {
         //Pide la order Id y la Setea la info de la orden con la cual trabajaremos.
         try{

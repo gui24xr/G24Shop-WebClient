@@ -9,7 +9,6 @@ const CreateOrderButton = () => {
     const {createOrder} = useOrdersStore()
     const navigate = useNavigate()
     const handleClick = () =>{
-        alert('Vamos a comprar')
         createOrder() //Esto del store crea la compra, setea la current asique ya podria redirigr a la pantalla de la currentOrder
         navigate('/order')
     } 
